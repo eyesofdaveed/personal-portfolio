@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Eyesofdaveed Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, maximum-scale=1.0, initial-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Portfolio_files/img/icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Portfolio_files/img/icon.png"
+    />
+    <link rel="stylesheet" media="all" href="Portfolio_files/css/app.min.css" />
+    <script>
+      var viewportmeta = document.querySelector('meta[name="viewport"]');
+      if (viewportmeta) {
+        if (screen.width < 375) {
+          var newScale = screen.width / 375;
+          viewportmeta.content =
+            "width=375, minimum-scale=" +
+            newScale +
+            ", maximum-scale=1.0, user-scalable=no, initial-scale=" +
+            newScale +
+            "";
+        } else {
+          viewportmeta.content =
+            "width=device-width, maximum-scale=1.0, initial-scale=1.0";
+        }
+      }
+    </script>
+  </head>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div class="page">
+      <div class="main"  id="main">
+        <div class="header js-header" id="header">
+          <div class="header__center center">
+            <a
+              class="header__logo"
+              href="#"
+              ><img class="header__pic" src="Portfolio_files/img/iconOpen.png" alt=""
+            /></a>
+            <div class="header__social header__social_main">
+              <a class="header__link" href="https://github.com/eyesofdaveed">
+                <img src="Portfolio_files/img/iconmonstr-github-1-240.png" alt="" width="50px">
+                Github</a
+              ><a class="header__link" href="https://www.linkedin.com/in/daulet-dauitbek-344182178/">
+                <img src="Portfolio_files/img/iconmonstr-linkedin-4-240.png" alt="" width="50px">
+                LinkedIn</a
+              >
+            </div>
+            <button class="header__burger js-header-burger"></button>
+          </div>
+          <div class="header__wrapper js-header-wrapper">
+            <div class="header__preview">
+              <img
+                  class="header__pic logo__pic"
+                  src="Portfolio_files/img/iconClosed.png"
+                  alt=""
+              />
+              <div class="header__img">
+                <img
+                  class="header__pic"
+                  src=".Portfolio_files/img/bg-header.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="header__center center">
+              <div class="header__contacts">
+                <a class="header__line" href="mailto:davdauit@gmail.com">
+                  <div class="header__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                      fill="none"
+                      viewBox="0 0 18 15"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.422.267C1.244.267.289 1.222.289 2.4v9.956c0 1.178.955 2.133 2.133 2.133h12.8c1.178 0 2.133-.955 2.133-2.133V2.4c0-1.178-.955-2.133-2.133-2.133h-12.8zM1.711 2.4a.71.71 0 0 1 .711-.711h12.8a.71.71 0 0 1 .711.711v9.956a.71.71 0 0 1-.711.711h-12.8a.71.71 0 0 1-.711-.711V2.4zm2.636.919a.71.71 0 1 0-1.006 1.006l4.978 4.978a.71.71 0 0 0 1.006 0l4.978-4.978a.71.71 0 1 0-1.006-1.006L8.822 7.794 4.347 3.319zm1.422 5.689a.71.71 0 0 1 0 1.006l-1.422 1.422a.71.71 0 1 1-1.006-1.006l1.422-1.422a.71.71 0 0 1 1.006 0zm7.111 0a.71.71 0 1 0-1.006 1.006l1.422 1.422a.71.71 0 1 0 1.006-1.006l-1.422-1.422z"
+                        fill="#4c40f7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="header__text">davdauit@gmail.com</div></a
+                >
+                <div class="header__line">
+                  <div class="header__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="none"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M9.273.85a.71.71 0 0 0-.901 0L.55 7.25a.71.71 0 0 0 .901 1.101l7.372-6.032 5.85 4.786a.71.71 0 1 0 .901-1.101L9.273.85zM3.845 9.222a.71.71 0 1 0-1.422 0v7.111a.71.71 0 0 0 .711.711h6.4a.71.71 0 1 0 0-1.422H3.845v-6.4zm9.932 0a2.04 2.04 0 0 0-2.11 2.008c.001.243.112.6.358 1.053.239.44.567.901.908 1.328l.867.996.867-.996c.341-.427.669-.887.908-1.328.246-.453.357-.81.358-1.053a2.04 2.04 0 0 0-2.11-2.008h-.047zm2.868 2.004h.711c0 .599-.245 1.21-.531 1.736-.294.542-.678 1.075-1.047 1.537l-1.018 1.163-.336.344-.096.095-.027.026-.007.007-.003.003-.491-.514-.491.514-.003-.003-.007-.007-.026-.026-.096-.095-.336-.344-1.017-1.163c-.37-.462-.753-.995-1.047-1.537-.286-.526-.531-1.138-.531-1.736v-.01c.012-.931.399-1.817 1.072-2.46.668-.637 1.561-.981 2.483-.957.922-.024 1.816.32 2.483.957.673.643 1.06 1.529 1.072 2.46l-.711.01zm-3.335 4.911c0 0 0 0 .491-.514l.491.514a.71.71 0 0 1-.982 0zm.491-4.07a.71.71 0 1 0 0-1.422.71.71 0 1 0 0 1.422z"
+                        fill="#4c40f7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="header__text">
+                    <p>Taraz, Kazakhstan</p>
+                  </div>
+                </div>
+                <a class="header__line" href="tel:+77770270575">
+                  <div class="header__icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="18"
+                      fill="none"
+                      viewBox="0 0 17 18"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.689 2.978a.71.71 0 0 1 .711-.711h7.111a.71.71 0 0 1 .711.711v4.267a.71.71 0 0 1-.711.711H8.822a.71.71 0 0 0-.318.075l-1.815.908V2.978zM7.4.844c-1.178 0-2.133.955-2.133 2.133v7.111a.71.71 0 0 0 1.029.636L8.99 9.378h5.521c1.178 0 2.133-.955 2.133-2.133V2.978c0-1.178-.955-2.133-2.133-2.133H7.4zM2.422 2.267C1.244 2.267.289 3.222.289 4.4v11.378c0 1.178.955 2.133 2.133 2.133h7.822c1.178 0 2.133-.955 2.133-2.133V10.8a.71.71 0 1 0-1.422 0v4.978a.71.71 0 0 1-.711.711H2.422a.71.71 0 0 1-.711-.711V4.4a.71.71 0 0 1 .711-.711h1.422a.71.71 0 1 0 0-1.422H2.422z"
+                        fill="#4c40f7"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="header__text">+7 777 027 0575</div></a
+                >
+              </div>
+              <nav class="header__nav">
+                <a class="header__item" href="#aboutme"
+                  ><span>About me</span></a
+                ><a
+                  class="header__item"
+                  href="#myprojects"
+                  ><span>Projects</span></a
+                ><a
+                  class="header__item"
+                  href="#contactme"
+                  ><span>Contact</span></a
+                >
+              </nav>
+              <div class="header__social header__social_inner">
+                <a class="header__link" href="https://github.com/eyesofdaveed">
+                  <img src="Portfolio_files/img/iconmonstr-github-1-240.png" alt="" width="50px">
+                  Github</a
+                ><a class="header__link" href="https://www.linkedin.com/in/daulet-dauitbek-344182178/">
+                  <img src="Portfolio_files/img/iconmonstr-linkedin-4-240.png" alt="" width="50px">
+                  LinkedIn</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main__bg">
+          <img class="main__pic" src=".Portfolio_files/img/bg-main.jpg" alt="" />
+        </div>
+        <div class="main__center center">
+          <div class="main__wrap">
+            <div
+              class="main__stage stage aos-init aos-animate"
+              data-aos="transform"
+            >
+              Daulet Dauitbek
+            </div>
+            <h1 class="main__title title h1">
+              <span
+                >Hi,</span
+              ><span
+                >I'm Daulet.</span
+              ><span
+                >Front-end</span
+              ><span
+                >Developer.</span
+              >
+            </h1>
+            <a
+              class="scroll js-scroll aos-init"
+              href="#aboutme"
+              data-aos="transform"
+            >
+              <div class="scroll__icon">
+                <img
+                  class="scroll__pic"
+                  src=".Portfolio_files/img/scroll.svg"
+                  alt=""
+                />
+              </div>
+              <div class="scroll__text">Scroll down</div></a
+            >
+          </div>
+        </div>
+        <div class="main__view aos-init aos-animate" data-aos="">
+          <div class="main__preview">
+            <img
+              class="main__pic"
+              src=".Portfolio_files/img/main-pic-6.png"
+              alt=""
+            />
+          </div>
+          <div class="main__preview">
+            <img
+              class="main__pic js-parallax"
+              data-scale="2.5"
+              data-orientation="up"
+              src=".Portfolio_files/img/main-pic-1.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, -25px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="main__preview">
+            <img
+              class="main__pic js-parallax"
+              data-scale="1.5"
+              data-orientation="up"
+              src=".Portfolio_files/img/main-pic-2.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, -2px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="main__preview">
+            <img
+              class="main__pic"
+              src=".Portfolio_files/img/main-pic-3.png"
+              alt=""
+            />
+          </div>
+          <div class="main__preview">
+            <img
+              class="main__pic"
+              src=".Portfolio_files/img/main-pic-4.png"
+              alt=""
+            />
+          </div>
+          <div class="main__preview">
+            <img
+              class="main__pic js-parallax"
+              data-scale="4.5"
+              data-orientation="up"
+              src=".Portfolio_files/img/main-pic-5.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, 114px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="main__preview">
+            <img
+              class="main__pic js-parallax"
+              data-scale="1.5"
+              data-orientation="down"
+              src=".Portfolio_files/img/main-pic-7.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, -38px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+        </div>
+        <div class="main__figures">
+          <div
+            class="main__figure aos-init aos-animate"
+            data-aos="animation-translate-y"
+          >
+            <img
+              class="main__pic js-parallax"
+              data-scale="2.2"
+              data-orientation="down"
+              src=".Portfolio_files/img/figure-1.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, 16px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div
+            class="main__figure aos-init"
+            data-aos="animation-translate-y"
+            data-aos-delay="200"
+          >
+            <img
+              class="main__pic js-parallax"
+              data-scale="2.2"
+              data-orientation="up"
+              src=".Portfolio_files/img/figure-2.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, 91px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div
+            class="main__figure aos-init"
+            data-aos="animation-translate-y"
+            data-aos-delay="400"
+          >
+            <img
+              class="main__pic"
+              src=".Portfolio_files/img/figure-3.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="work" id="aboutme">
+        <div class="work__circles"></div>
+        <div class="work__center center">
+          <div class="work__wrap">
+            <div
+              class="work__stage stage stage_pink aos-init"
+              data-aos="animation-scale-y"
+            >
+              What I do
+            </div>
+            <h2
+              class="work__title title h1 aos-init"
+              data-aos="animation-scale-y"
+              data-aos-delay="150"
+            >
+              I develop and launch web applications.  
+            </h2>
+            <div
+              class="work__text aos-init"
+              data-aos="animation-scale-y"
+              data-aos-delay="300"
+            >
+            My stack of languages and technologies: JavaScript, JQuery, ReactJs, ExpressJs, BootStrap, Python, MariDB, WordPress, SCSS, Git.
+            </div>
+            <div class="details__btn aos-init" data-aos="animation-translate-y">
+              <button class="btn btn_purple">
+                <span class="btn__text">Contact me</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="16"
+                  fill="none"
+                  viewBox="0 0 22 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.707.293a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414L18.586 7H1a1 1 0 1 0 0 2h17.586l-5.293 5.293a1 1 0 0 0 1.414 1.414l7-7c.183-.183.28-.419.292-.659L22 8m-.076-.383c-.049-.118-.121-.228-.217-.324l-7-7m7.217 7.324c.048.115.075.241.076.374z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="work__preview">
+          <img
+            class="work__pic js-parallax"
+            data-scale="2"
+            data-orientation="down"
+            src=".Portfolio_files/img/work-cube.png"
+            alt=""
+            style="
+              will-change: transform;
+              transform: translate3d(0px, -67px, 0px);
+              transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+            "
+          />
+        </div>
+        <div class="work__figures aos-init" data-aos="">
+          <div class="work__figure">
+            <img
+              class="work__pic js-parallax"
+              data-scale="1.3"
+              data-orientation="up"
+              src=".Portfolio_files/img/work-cube-1.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, 152px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="work__figure">
+            <img
+              class="work__pic js-parallax"
+              data-scale="1.5"
+              data-orientation="up left"
+              src=".Portfolio_files/img/work-cube-2.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(178px, 178px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="work__figure">
+            <img
+              class="work__pic js-parallax"
+              data-scale="1.3"
+              data-orientation="up right"
+              src=".Portfolio_files/img/work-cube-3.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(-98px, 98px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="work__figure">
+            <img
+              class="work__pic"
+              src=".Portfolio_files/img/work-cube-4.png"
+              alt=""
+            />
+          </div>
+          <div class="work__figure">
+            <img
+              class="work__pic js-parallax"
+              data-scale="1.1"
+              data-orientation="left"
+              src=".Portfolio_files/img/work-cube-5.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(46px, 0px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="work__figure">
+            <img
+              class="work__pic js-parallax"
+              data-scale="1.2"
+              data-orientation="right"
+              src=".Portfolio_files/img/work-cube-6.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(-91px, 0px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+          <div class="work__figure">
+            <img
+              class="work__pic js-parallax"
+              data-scale="1.2"
+              data-orientation="down"
+              src=".Portfolio_files/img/work-cube-7.png"
+              alt=""
+              style="
+                will-change: transform;
+                transform: translate3d(0px, -71px, 0px);
+                transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+              "
+            />
+          </div>
+        </div>
+      </div>
+      <div class="wrapper wrapper_gradient">
+        <div class="cases cases_main" id="myprojects" style="margin-bottom: 10%;">
+          <div class="cases__center center">
+            <div
+              class="cases__stage stage aos-init"
+              data-aos="animation-scale-y"
+            >
+              Portfolio
+            </div>
+            <h2
+              class="cases__title h1 aos-init"
+              data-aos="animation-scale-y"
+              data-aos-delay="150"
+            >
+              My recent<br />Projects.
+            </h2>
+            <div
+              class="cases__list js-owl"
+              data-items-mobile-portrait="1"
+              data-items-mobile-album="1"
+              data-autoheight=""
+            >
+              <a
+                class="cases__item aos-init"
+                data-aos="animation-translate-y"
+                data-aos-delay=""
+                href="https://github.com/eyesofdaveed/book-finder"
+              >
+                <div class="cases__preview">
+                  <img
+                    class="cases__pic"
+                    src="Portfolio_files/img/case-1.png"
+                    alt=""
+                  />
+                  <div class="cases__box">Source <br />Code</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Book Finding App</h4>
+                  <div class="cases__text">Google Books Api, Axios, Js</div>
+                </div></a
+              ><a
+                class="cases__item aos-init"
+                data-aos="animation-translate-y"
+                data-aos-delay="200"
+                href="https://github.com/eyesofdaveed/github-status"
+              >
+                <div class="cases__preview">
+                  <img
+                    class="cases__pic"
+                    src="Portfolio_files/img/case-2.png"
+                    alt=""
+                  />
+                  <div class="cases__box">Source <br />Code</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Github Status Code</h4>
+                  <div class="cases__text">GitHub Apit, AxiosJs</div>
+                </div></a
+              ><a
+                class="cases__item aos-init"
+                data-aos="animation-translate-y"
+                data-aos-delay=""
+                href="https://github.com/eyesofdaveed/weather-app"
+              >
+                <div class="cases__preview">
+                  <img
+                    class="cases__pic"
+                    src="Portfolio_files/img/case-3.png"
+                    alt=""
+                  />
+                  <div class="cases__box">Source <br />Code</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Weather App</h4>
+                  <div class="cases__text">AccuWeather Api, JQuery</div>
+                </div></a
+              ><a
+                class="cases__item aos-init"
+                data-aos="animation-translate-y"
+                data-aos-delay="200"
+                href="https://www.smavy.kz"
+              >
+                <div class="cases__preview">
+                  <img
+                    class="cases__pic"
+                    src="Portfolio_files/img/case-4.png"
+                    alt=""
+                  />
+                  <div class="cases__box">Case <br />Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Smavy Programming School</h4>
+                  <div class="cases__text">WordPress, E-Learn, JQuery, Express</div>
+                </div></a
+              ><a
+                class="cases__item aos-init"
+                data-aos="animation-translate-y"
+                data-aos-delay=""
+                href="https://github.com/eyesofdaveed/dynamic-css-color"
+              >
+                <div class="cases__preview">
+                  <img
+                    class="cases__pic"
+                    src="Portfolio_files/img/case-5.png"
+                    alt=""
+                  />
+                  <div class="cases__box">Case <br />Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">Dynamic CSS Generator</h4>
+                  <div class="cases__text">Pure CSS</div>
+                </div></a
+              ><a
+                class="cases__item aos-init"
+                data-aos="animation-translate-y"
+                data-aos-delay="200"
+                href="https://github.com/eyesofdaveed/csv2json-converter"
+              >
+                <div class="cases__preview">
+                  <img
+                    class="cases__pic"
+                    src="Portfolio_files/img/case-6.png"
+                    alt=""
+                  />
+                  <div class="cases__box">Case <br />Study</div>
+                </div>
+                <div class="cases__body">
+                  <h4 class="cases__info h4">CSV to JSON</h4>
+                  <div class="cases__text">Vanilla JS</div>
+                </div></a
+              >
+            </div>
+          </div>
+          <div class="cases__figures">
+            <div class="cases__figure">
+              <img
+                class="cases__pic js-parallax"
+                data-scale="2"
+                data-orientation="down"
+                src=".Portfolio_files/img/figure-2.png"
+                alt=""
+                style="
+                  will-change: transform;
+                  transform: translate3d(0px, 92px, 0px);
+                  transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+                "
+              />
+            </div>
+            <div class="cases__figure">
+              <img
+                class="cases__pic js-parallax"
+                data-scale="1.8"
+                data-orientation="down"
+                src=".Portfolio_files/img/figure-3.png"
+                alt=""
+                style="
+                  will-change: transform;
+                  transform: translate3d(0px, 102px, 0px);
+                  transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="wrapper wrapper_dark">
+          <div class="contacts" id="contactme">
+            <div class="contacts__center center">
+              <div class="contacts__container">
+                <div class="contacts__wrap">
+                  <div
+                    class="contacts__stage stage aos-init"
+                    data-aos="animation-scale-y"
+                  >
+                    Say Hi 👋
+                  </div>
+                  <h2
+                    class="contacts__title h1 aos-init"
+                    data-aos="animation-scale-y"
+                    data-aos-delay="200"
+                  >
+                    Let's work <br />Together.
+                  </h2>
+                  <div
+                    class="contacts__info aos-init"
+                    data-aos="animation-scale-y"
+                    data-aos-delay="400"
+                  >
+                    I always try to expand the horizons of my skills and accept new challenges.
+                  </div>
+                </div>
+                <div class="contacts__row">
+                  <div
+                    class="contacts__details aos-init"
+                    data-aos="animation-translate-y"
+                  >
+                    <a class="contacts__line" href="mailto:davdauit@gmail.com">
+                      <div class="contacts__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="15"
+                          fill="none"
+                          viewBox="0 0 18 15"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M2.422.267C1.244.267.289 1.222.289 2.4v9.956c0 1.178.955 2.133 2.133 2.133h12.8c1.178 0 2.133-.955 2.133-2.133V2.4c0-1.178-.955-2.133-2.133-2.133h-12.8zM1.711 2.4a.71.71 0 0 1 .711-.711h12.8a.71.71 0 0 1 .711.711v9.956a.71.71 0 0 1-.711.711h-12.8a.71.71 0 0 1-.711-.711V2.4zm2.636.919a.71.71 0 1 0-1.006 1.006l4.978 4.978a.71.71 0 0 0 1.006 0l4.978-4.978a.71.71 0 1 0-1.006-1.006L8.822 7.794 4.347 3.319zm1.422 5.689a.71.71 0 0 1 0 1.006l-1.422 1.422a.71.71 0 1 1-1.006-1.006l1.422-1.422a.71.71 0 0 1 1.006 0zm7.111 0a.71.71 0 1 0-1.006 1.006l1.422 1.422a.71.71 0 1 0 1.006-1.006l-1.422-1.422z"
+                            fill="#4c40f7"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="contacts__text">davdauit@gmail.com</div></a
+                    >
+                    <div class="contacts__line">
+                      <div class="contacts__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="18"
+                          height="18"
+                          fill="none"
+                          viewBox="0 0 18 18"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M9.273.85a.71.71 0 0 0-.901 0L.55 7.25a.71.71 0 0 0 .901 1.101l7.372-6.032 5.85 4.786a.71.71 0 1 0 .901-1.101L9.273.85zM3.845 9.222a.71.71 0 1 0-1.422 0v7.111a.71.71 0 0 0 .711.711h6.4a.71.71 0 1 0 0-1.422H3.845v-6.4zm9.932 0a2.04 2.04 0 0 0-2.11 2.008c.001.243.112.6.358 1.053.239.44.567.901.908 1.328l.867.996.867-.996c.341-.427.669-.887.908-1.328.246-.453.357-.81.358-1.053a2.04 2.04 0 0 0-2.11-2.008h-.047zm2.868 2.004h.711c0 .599-.245 1.21-.531 1.736-.294.542-.678 1.075-1.047 1.537l-1.018 1.163-.336.344-.096.095-.027.026-.007.007-.003.003-.491-.514-.491.514-.003-.003-.007-.007-.026-.026-.096-.095-.336-.344-1.017-1.163c-.37-.462-.753-.995-1.047-1.537-.286-.526-.531-1.138-.531-1.736v-.01c.012-.931.399-1.817 1.072-2.46.668-.637 1.561-.981 2.483-.957.922-.024 1.816.32 2.483.957.673.643 1.06 1.529 1.072 2.46l-.711.01zm-3.335 4.911c0 0 0 0 .491-.514l.491.514a.71.71 0 0 1-.982 0zm.491-4.07a.71.71 0 1 0 0-1.422.71.71 0 1 0 0 1.422z"
+                            fill="#4c40f7"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="contacts__text">
+                        <p>Taraz, Kazakhstan</p>
+                      </div>
+                    </div>
+                    <a class="contacts__line" href="tel:+77770270575">
+                      <div class="contacts__icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="17"
+                          height="18"
+                          fill="none"
+                          viewBox="0 0 17 18"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M6.689 2.978a.71.71 0 0 1 .711-.711h7.111a.71.71 0 0 1 .711.711v4.267a.71.71 0 0 1-.711.711H8.822a.71.71 0 0 0-.318.075l-1.815.908V2.978zM7.4.844c-1.178 0-2.133.955-2.133 2.133v7.111a.71.71 0 0 0 1.029.636L8.99 9.378h5.521c1.178 0 2.133-.955 2.133-2.133V2.978c0-1.178-.955-2.133-2.133-2.133H7.4zM2.422 2.267C1.244 2.267.289 3.222.289 4.4v11.378c0 1.178.955 2.133 2.133 2.133h7.822c1.178 0 2.133-.955 2.133-2.133V10.8a.71.71 0 1 0-1.422 0v4.978a.71.71 0 0 1-.711.711H2.422a.71.71 0 0 1-.711-.711V4.4a.71.71 0 0 1 .711-.711h1.422a.71.71 0 1 0 0-1.422H2.422z"
+                            fill="#4c40f7"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div class="contacts__text">+7 777 027 0575</div></a
+                    >
+                    <a
+              class="scroll js-scroll-top aos-init"
+              href="#main"
+              data-aos="transform"
+            >
+              <div class="scroll__icon">
+                <img
+                  class="scroll__pic"
+                  src=".Portfolio_files/img/scroll.svg"
+                  alt=""
+                />
+              </div>
+              <div class="scroll__text">Scroll top</div></a
+            >
+                  </div>
+                  <form
+                    class="contacts__form aos-init"
+                    data-aos="animation-translate-y"
+                    data-aos-delay="200"
+                    id="contact_form"
+                    action="#main"
+                  >
+                    <div class="contacts__field field">
+                      <div class="field__wrap">
+                        <input
+                          class="field__input"
+                          type="text"
+                          name="name"
+                          placeholder="Name"
+                          id="user_name"
+                        />
+                        <div class="field__icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="18"
+                            fill="none"
+                            viewBox="0 0 17 18"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M8.5.875a4.5 4.5 0 0 0-4.5 4.5v2a4.5 4.5 0 1 0 9 0v-2a4.5 4.5 0 0 0-4.5-4.5zM6 5.375a2.5 2.5 0 1 1 5 0v2a2.5 2.5 0 1 1-5 0v-2zM3.547 12.25a1 1 0 0 0-.969-1.75A5 5 0 0 0 0 14.875v2a1 1 0 0 0 1 1h15a1 1 0 0 0 1-1v-2a5 5 0 0 0-2.578-4.375 1 1 0 1 0-.969 1.75A3 3 0 0 1 15 14.875v1H2v-1a3 3 0 0 1 1.547-2.625z"
+                              fill="#111029"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field">
+                      <div class="field__wrap">
+                        <input
+                          class="field__input"
+                          type="email"
+                          name="email"
+                          placeholder="Email"
+                          id="user_email"
+                        />
+                        <div class="field__icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="17"
+                            height="17"
+                            fill="none"
+                            viewBox="0 0 17 17"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M16.707.668a1 1 0 0 1 .238 1.033l-5 14.5a1 1 0 0 1-1.853.093l-3-6.5a1 1 0 0 1 .201-1.126l3-3a1 1 0 0 1 1.414 1.414L9.2 9.589l1.665 3.608 3.52-10.208-10.207 3.52 2.223 1.026a1 1 0 1 1-.838 1.816L1.081 7.283a1 1 0 0 1 .093-1.853l14.5-5a1 1 0 0 1 1.033.238z"
+                              fill="#4c40f7"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contacts__field field field_textarea">
+                      <div class="field__wrap">
+                        <textarea
+                          class="field__textarea"
+                          name="message"
+                          placeholder="Message"
+                          id="user_text"
+                        ></textarea>
+                        <div class="field__icon">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            fill="none"
+                            viewBox="0 0 18 18"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M.5 2.875a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-3.532l-2.2 2.64a1 1 0 0 1-1.536 0l-2.2-2.64H2.5a2 2 0 0 1-2-2v-10zm15 0h-13v10h4a1 1 0 0 1 .768.36L9 15.313l1.732-2.078a1 1 0 0 1 .768-.36h4v-10zm-12 3a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1zm1 3a1 1 0 1 0 0 2h9a1 1 0 1 0 0-2h-9z"
+                              fill="#111029"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="contacts__btn">
+                      <button class="btn btn_purple">
+                        <span class="btn__text">Let’s Talk</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="16"
+                          fill="none"
+                          viewBox="0 0 22 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M14.707.293a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414L18.586 7H1a1 1 0 1 0 0 2h17.586l-5.293 5.293a1 1 0 0 0 1.414 1.414l7-7c.183-.183.28-.419.292-.659L22 8m-.076-.383c-.049-.118-.121-.228-.217-.324l-7-7m7.217 7.324c.048.115.075.241.076.374z"
+                            fill="#fff"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="figures">
+                  <div class="figures__preview">
+                    <img
+                      class="figures__pic"
+                      src=".Portfolio_files/img/figures-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="figures__preview">
+                    <img
+                      class="figures__pic js-parallax"
+                      data-scale="1.6"
+                      data-orientation="up"
+                      src=".Portfolio_files/img/figures-2.png"
+                      alt=""
+                      style="
+                        will-change: transform;
+                        transform: translate3d(0px, 146px, 0px);
+                        transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+                      "
+                    />
+                  </div>
+                  <div class="figures__preview">
+                    <img
+                      class="figures__pic js-parallax"
+                      data-scale="1.3"
+                      data-orientation="up"
+                      src=".Portfolio_files/img/figures-3.png"
+                      alt=""
+                      style="
+                        will-change: transform;
+                        transform: translate3d(0px, 33px, 0px);
+                        transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+                      "
+                    />
+                  </div>
+                  <div class="figures__preview">
+                    <img
+                      class="figures__pic"
+                      src=".Portfolio_files/img/figures-4.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="figures__preview">
+                    <img
+                      class="figures__pic js-parallax"
+                      data-scale="2.3"
+                      data-orientation="down"
+                      src=".Portfolio_files/img/figures-5.png"
+                      alt=""
+                      style="
+                        will-change: transform;
+                        transform: translate3d(0px, -50px, 0px);
+                        transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+                      "
+                    />
+                  </div>
+                  <div class="figures__preview">
+                    <img
+                      class="figures__pic js-parallax"
+                      data-scale="2"
+                      data-orientation="up"
+                      src=".Portfolio_files/img/figures-6.png"
+                      alt=""
+                      style="
+                        will-change: transform;
+                        transform: translate3d(0px, 56px, 0px);
+                        transition: transform 0.5s cubic-bezier(0, 0, 0, 1) 0s;
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="cursor"></div>
+    </div>
+    <script src="Portfolio_files/js/jquery.min.js"></script>
+    <script src="Portfolio_files/js/aos.js"></script>
+    <script src="Portfolio_files/js/simpleParallax.min.js"></script>
+    <script src="Portfolio_files/js/app.js"></script>
+  <script>
+      $('.header__item').on('click', function(){ 
+        $('.header__burger.js-header-burger').toggleClass("active"); 
+        $('.header__wrapper.js-header-wrapper').toggleClass("visible"); 
+        $("html").toggleClass('no-scroll');
+        $("body").toggleClass('no-scroll');
+      });
+    </script>
+  </body>
+</html>
