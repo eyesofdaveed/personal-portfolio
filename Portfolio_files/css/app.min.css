@@ -2770,7 +2770,7 @@ body:not(.touch-device) .owl-item:hover .details__preview {
     @media only screen and (max-width: 1279px) {
       .work__text {
         max-width: 270px;
-        margin: 0; } }
+        margin: 0 0 50px 0; } }
   .work .scroll {
     color: #fff; }
     @media only screen and (max-width: 1279px) {
