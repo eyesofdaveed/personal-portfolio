@@ -44,7 +44,6 @@ var navArrows = [
 
 $(document).ready(function () {
   var form = $("#contact_form"),
-    email = $("#user_email"),
     name = $("#name"),
     message = $("#user_text"),
     submit = $("#submit");
@@ -58,7 +57,7 @@ $(document).ready(function () {
     info.html("Loading...").css("color", "red").slideDown();
     e.preventDefault();
     if (validate()) {
-      window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}`;
+      window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}&body=${message}`;
     }
   });
 
