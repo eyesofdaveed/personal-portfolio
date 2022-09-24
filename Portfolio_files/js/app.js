@@ -43,7 +43,7 @@ var navArrows = [
 ]; // owl carousel
 
 $(document).ready(function () {
-  var name = $("#name"),
+  var name = $("#user_name"),
     message = $("#user_text"),
     submit = $("#submit");
 
