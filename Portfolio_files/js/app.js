@@ -48,7 +48,6 @@ $(document).ready(function () {
     submit = $("#submit");
 
   submit.on("click", function (e) {
-    console.log(name, message);
     e.preventDefault();
     window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}&body=${message}`;
   });
