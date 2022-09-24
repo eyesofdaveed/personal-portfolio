@@ -49,7 +49,6 @@ $(document).ready(function () {
 
   submit.on("click", function (e) {
     console.log(name, message);
-    info.html("Loading...").css("color", "red").slideDown();
     e.preventDefault();
     if (validate()) {
       window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}&body=${message}`;
