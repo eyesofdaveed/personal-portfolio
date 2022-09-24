@@ -49,7 +49,7 @@ $(document).ready(function () {
 
   submit.on("click", function (e) {
     e.preventDefault();
-    window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}&body=${message}`;
+    window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name.val()}&body=${message.val()}`;
   });
 });
 
