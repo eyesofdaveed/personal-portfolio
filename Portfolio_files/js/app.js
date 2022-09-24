@@ -42,67 +42,51 @@ var navArrows = [
   '<span>\n        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" fill="none" viewBox="0 0 8 14">\n            <path fill-rule="evenodd" d="M.293 13.707a1 1 0 0 1 0-1.414L5.586 7 .293 1.707A1 1 0 1 1 1.707.293l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414 0z" fill="#9f9fa9"/>\n        </svg>\n    </span>\n',
 ]; // owl carousel
 
-$(document).ready(function() {
- 
-  var form = $('#contact_form'),
-      email = $('#user_email'),
-      name = $('#name'),
-      message = $('#user_text'),
-      submit = $("#submit");
-  
-  form.on('input', '#email, #name, #message', function() {
-    $(this).css('border-color', '');
-    info.html('').slideUp();
+$(document).ready(function () {
+  var form = $("#contact_form"),
+    email = $("#user_email"),
+    name = $("#name"),
+    message = $("#user_text"),
+    submit = $("#submit");
+
+  form.on("input", "#email, #name, #message", function () {
+    $(this).css("border-color", "");
+    info.html("").slideUp();
   });
-  
-  submit.on('click', function(e) {
-    info.html('Loading...').css('color', 'red').slideDown();
+
+  submit.on("click", function (e) {
+    info.html("Loading...").css("color", "red").slideDown();
     e.preventDefault();
-    if(validate()) {
-      $.ajax({
-        type: "POST",
-        url: "mailer.php",
-        data: form.serialize(),
-        dataType: "json"
-      }).done(function(data) {
-        if(data.success) {
-          email.val('');
-          name.val('');
-          message.val('');
-          info.html('Message sent!').css('color', 'green').slideDown();
-        } else {
-          info.html('Could not send mail! Sorry!').css('color', 'red').slideDown();
-        }
-      });
+    if (validate()) {
+      window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}`;
     }
   });
-  
+
   function validate() {
     var valid = true;
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    
-    if(!regex.test(email.val())) {
-      email.css('border-color', 'red');
+
+    if (!regex.test(email.val())) {
+      email.css("border-color", "red");
       valid = false;
     }
-    if($.trim(subject.val()) === "") {
-      subject.css('border-color', 'red');
+    if ($.trim(subject.val()) === "") {
+      subject.css("border-color", "red");
       valid = false;
     }
-    if($.trim(message.val()) === "") {
-      message.css('border-color', 'red');
+    if ($.trim(message.val()) === "") {
+      message.css("border-color", "red");
       valid = false;
     }
-    
+
     return valid;
   }
- 
 });
 
-window.addEventListener('load', AOS.refresh);
+window.addEventListener("load", AOS.refresh);
 
 AOS.init({
-  startEvent: 'load'
+  startEvent: "load",
 }); // parallax effect
 
 (function () {
