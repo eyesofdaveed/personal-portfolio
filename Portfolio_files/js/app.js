@@ -48,7 +48,7 @@ $(document).ready(function () {
     message = $("#user_text"),
     submit = $("#submit");
 
-  form.on("input", "#email, #name, #message", function () {
+  form.on("input", "#name, #message", function () {
     $(this).css("border-color", "");
     info.html("").slideUp();
   });
