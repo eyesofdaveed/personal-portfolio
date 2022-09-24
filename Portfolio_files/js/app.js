@@ -48,12 +48,13 @@ $(document).ready(function () {
     message = $("#user_text"),
     submit = $("#submit");
 
-  form.on("input", "#name, #message", function () {
+  form.on("#name, #message", function () {
     $(this).css("border-color", "");
     info.html("").slideUp();
   });
 
   submit.on("click", function (e) {
+    console.log(name, message);
     info.html("Loading...").css("color", "red").slideDown();
     e.preventDefault();
     if (validate()) {
