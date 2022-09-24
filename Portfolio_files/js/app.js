@@ -43,15 +43,9 @@ var navArrows = [
 ]; // owl carousel
 
 $(document).ready(function () {
-  var form = $("#contact_form"),
-    name = $("#name"),
+  var name = $("#name"),
     message = $("#user_text"),
     submit = $("#submit");
-
-  form.on("#name, #message", function () {
-    $(this).css("border-color", "");
-    info.html("").slideUp();
-  });
 
   submit.on("click", function (e) {
     console.log(name, message);
