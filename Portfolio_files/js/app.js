@@ -50,25 +50,8 @@ $(document).ready(function () {
   submit.on("click", function (e) {
     console.log(name, message);
     e.preventDefault();
-    if (validate()) {
-      window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}&body=${message}`;
-    }
+    window.location.href = `mailto:davdauit@gmail.com?subject=Hi from ${name}&body=${message}`;
   });
-
-  function validate() {
-    var valid = true;
-
-    if ($.trim(subject.val()) === "") {
-      subject.css("border-color", "red");
-      valid = false;
-    }
-    if ($.trim(message.val()) === "") {
-      message.css("border-color", "red");
-      valid = false;
-    }
-
-    return valid;
-  }
 });
 
 window.addEventListener("load", AOS.refresh);
