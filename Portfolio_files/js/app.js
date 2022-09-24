@@ -63,12 +63,7 @@ $(document).ready(function () {
 
   function validate() {
     var valid = true;
-    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
-    if (!regex.test(email.val())) {
-      email.css("border-color", "red");
-      valid = false;
-    }
     if ($.trim(subject.val()) === "") {
       subject.css("border-color", "red");
       valid = false;
